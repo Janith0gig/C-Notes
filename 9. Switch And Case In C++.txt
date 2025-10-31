@@ -1,0 +1,87 @@
+Switch And Case In C++
+
+
+example-->
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+int day;
+cout<<"Enter a Number (1-7) corrosponding to the day of the week : ";
+cin>>day;
+
+switch(day)
+ {
+     case 1:
+        cout<<"Monday"<<endl;
+        break;
+     case 2:
+        cout<<"Tuesday"<<endl;
+        break;
+     case 3:
+        cout<<"Wednesday"<<endl;
+        break;
+     case 4:
+        cout<<"Thrusday"<<endl;
+        break;
+     case 5:
+        cout<<"Friday"<<endl;
+        break;
+     case 6:
+        cout<<"Saturday"<<endl;
+        break;
+     case 7:
+        cout<<"Sunday"<<endl;
+        break;
+     default:
+        cout<<"Enter The Given Number You Baffon!!"<<endl;
+        break;
+ }
+    return 0;
+}
+
+
+
+
+example -->\#include <iostream>
+using namespace std;
+
+int main() 
+{
+char day;
+cout<<"Enter A Day Of The Week(M,T,W,H,F,S,Y)  : ";
+cin>>day;
+
+day = toupper(day);
+switch(day)
+ {
+     case 'M':
+        cout<<"Monday"<<endl;
+        break;
+     case 'T':
+        cout<<"Tuesday"<<endl;
+        break;
+     case 'W':
+        cout<<"Wednesday"<<endl;
+        break;
+     case 'H':
+        cout<<"Thrusday"<<endl;
+        break;
+     case 'F':
+        cout<<"Friday"<<endl;
+        break;
+     case 'S':
+        cout<<"Saturday"<<endl;
+        break;
+     case 'Y':
+        cout<<"Sunday"<<endl;
+        break;
+    default:
+        cout<<"Enter The Correct Letter(M,T,W,H,F,S,Y), You Baffon😐😑😐!!"<<endl;
+        break;
+        
+ }
+    return 0;
+}
+

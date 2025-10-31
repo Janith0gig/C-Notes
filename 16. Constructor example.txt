@@ -1,0 +1,179 @@
+#include <iostream>
+using namespace std;
+
+class Car {
+public:
+    string make;
+    string model;
+    int year;
+
+//default constructor
+ Car(){
+    make="McLaren"; 
+    model="p1";
+    year= 2014;
+ }
+
+    void displayinfo ()
+    {
+        cout<<year<<" "<<make<<" "<<model<<endl;
+    }
+};
+int main(){
+    //creating an object using default constructor
+    Car myCar;
+    
+    //displaying the information
+    myCar.displayinfo();
+    
+    
+
+    
+    return 0;
+}
+
+
+
+
+2---->
+
+#include <iostream>
+using namespace std;
+
+class Teacher {
+public:
+    string name;
+    string department;
+    int expr;
+    double salary;
+
+//default constructor
+ Teacher()
+ {
+    name="Darsan"; 
+    department="Biology";
+    expr= 2;
+    salary= 69000;
+ }
+
+    void displayinfo()
+    {
+        cout<<"Teacher Name : "<<name<<endl;
+        cout<<"Department  : "<<department<<endl;
+        cout<<"Experience : "<<expr<<endl;
+        cout<<"Salary : "<<salary<<endl;
+
+    }
+};
+int main(){
+    //creating an object using default constructor
+    Teacher tea1;
+    
+    //displaying the information
+    tea1.displayinfo();
+    
+    
+    
+    
+    return 0;
+}
+
+
+
+without displayinfo --->
+
+#include <iostream>
+using namespace std;
+
+class Teacher {
+public:
+    string name;
+    string department;
+    int expr;
+    double salary;
+
+//default constructor
+ Teacher()
+ {
+    name="Darsan"; 
+    department="Biology";
+    expr= 2;
+    salary= 69000;
+        cout<<"Teacher Name : "<<endl;
+        cout<<"Department  : "<<endl;
+        cout<<"Experience : "<<endl;
+        cout<<"Salary : "<<endl;
+
+    }
+};
+int main(){
+    //creating an object using default constructor
+    Teacher tea1;
+    
+
+    
+    
+    
+    
+    return 0;
+}
+
+
+example ---->
+\#include <iostream>
+using namespace std;
+
+class Teacher {
+public:
+    string name;
+    string department;
+    int expr;
+    int salary;
+
+ Teacher(string n, string d, int e, int s)
+    {
+    
+        cout<<"Teacher Name : "<<n<<endl;
+        cout<<"Department  : "<<d<<endl;
+        cout<<"Experience : "<<e<<endl;
+        cout<<"Salary : "<<s<<endl;
+
+    }
+};
+int main(){
+    Teacher tea1("Darsan","Biology",2,69000);
+    
+
+    
+    return 0;
+}
+example with two teachers -0------>
+
+#include <iostream>
+using namespace std;
+
+class Teacher {
+public:
+    string name;
+    string department;
+    int expr;
+    int salary;
+
+ Teacher(string n, string d, int e, int s)
+    {
+    
+        cout<<"Teacher Name : "<<n<<endl;
+        cout<<"Department  : "<<d<<endl;
+        cout<<"Experience : "<<e<<endl;
+        cout<<"Salary : "<<s<<endl;
+
+    }
+};
+int main(){
+    Teacher tea1("Darsan","Biology",2,69000);
+    cout<<endl;
+    Teacher tea2("Kowshik","Chemistry", 1,42000);
+
+    
+    return 0;
+}

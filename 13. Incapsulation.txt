@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+class Teacher {
+    private:
+    string name;
+    string subject;
+    int year;
+    public: 
+    void setdetail (string tname, string tsubject, int tyear)
+    {
+        name = tname;
+        subject = tsubject;
+        year = tyear;
+    }
+//member function
+    void display ()
+    {
+        cout<< "Name : "<< name
+            << ",Subject : "<<subject
+            << ",Year : "<<year<<endl;
+    }
+};
+
+int main(){
+    //Creat 3 objects
+    Teacher t1, t2, t3;
+    //Assin values to object
+    
+    t1.setdetail("Omkar","Electronics",5);
+    t2.setdetail("Mubeen","Chemistry",2);
+    t3.setdetail("Kowshik","Physics",3);
+    
+    t1.display();
+    t2.display();
+    t3.display();
+    
+    
+    return 0;
+}

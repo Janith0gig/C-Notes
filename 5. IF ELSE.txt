@@ -1,0 +1,141 @@
+IF example ---->
+
+
+#include <iostream>
+using namespace std;
+int main()
+{ 
+ int a;
+ cout<<"Enter Value : ";
+ cin>>a;
+ if (a>7)
+ {
+     cout<<"A is greater than 7";
+ }
+ else 
+{
+ cout<<"A is lesser than 7";
+ }
+   return 0;
+}
+
+
+
+EXAMPLE 2---->
+#include <iostream>
+using namespace std;
+int main()
+{ 
+ int a;
+ cout<<"Enter Value : ";
+ cin>>a;
+ if (a>7)
+    {
+     cout<<a<<" is greater than 7";
+    }
+ else
+   {
+ cout<<a<<" is lesser than 7";
+   }
+  
+  return 0;
+}
+
+
+
+
+
+example 3 --->
+#include <iostream>
+using namespace std;
+int main()
+{ 
+ int a;
+ cout<<"Enter Value : ";
+ cin>>a;
+ if (a%2==0)
+ {
+     cout<<a<<" is an Even number";
+ }
+ else
+ {
+     cout<<a<<" is an Odd number";
+ }
+  return 0;
+}
+
+
+
+EXAMPLE 2 vote--->
+
+#include <iostream>
+using namespace std;
+int main()
+{ 
+ int a;
+ cout<<"Enter Your Age : ";
+ cin>>a;
+ if (a>= 18)
+ {
+     cout<<"You are eligible to vote";
+ }
+ else
+ {
+     cout<<"You are not eligible to vote";
+ }
+  return 0;
+}
+
+
+example ---> 
+
+#include <iostream>
+using namespace std;
+int main()
+{ 
+ int a;
+ cout<<"Enter Your Age : ";
+ cin>>a;
+ if (a>= 18)
+ {
+     cout<<"You are eligible to vote";
+ }
+ else
+ {
+   
+   int y_l
+   ( y_l = 18-a);
+     cout<<"You are not eligible to vote.  ";
+     cout<<y_l<<" Years to wait till eligible to vote"<<endl;  // can directly to replace y_l to 18-a
+ }
+  return 0;
+}
+
+
+
+greatest of three numbers--->
+#include <iostream>
+using namespace std;
+int main()
+{ 
+   int num1,num2,num3;
+    cout<<"Entrer Three Numbers : ";
+    cin>>num1>>num2>>num3;
+
+    if (num1>num2 && num1>=num3)
+    {
+        cout<< num1 <<"  is the largest number"<<endl;
+    }
+    else if (num2>=num1&& num2>=num3)
+    {
+        cout<< num2 <<" is the largest number"<<endl;
+    }
+    else 
+    {
+        cout<< num3 <<" is the largest number"<<endl;
+    }
+    
+    
+  return 0;
+}
+

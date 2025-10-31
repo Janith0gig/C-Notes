@@ -1,0 +1,99 @@
+Functions in C++
+
+a Function in C++ is a group of statements that performs a specific task and can be used anywhere in the program.
+
+1.Reusability - Write once, use many times.
+2.Readability - Code becomes easier to read and understand.
+3.Debugging   - Errors are easier to find since each function is small and focused.
+4.Modularity  - Large problems are divided into smaller parts.
+5.Collaboration - Multiple people can work on different functions of the same program. \
+
+
+example -->
+
+#include <iostream>
+using namespace std;
+
+//function defination
+void greet() //when not returning any value
+{
+         cout<<"happy Birthday Aunty!"<<endl;
+}
+int main() 
+{
+    greet();//calling function
+
+ 
+    return 0;
+}
+
+
+
+example -->
+
+#include <iostream>
+using namespace std;
+
+    int add(int a , int b)
+{
+    return a+b;
+} 
+    int mul(int a , int b)
+{
+    return a*b;
+}
+    int sub(int a , int b)
+{
+    return a-b;
+}
+
+int main()
+{
+    cout<<"Addition : "<<add(5,10)<<endl;
+    cout<<"Multiplication : "<<mul(5,10)<<endl;
+    cout<<"Substraction : "<<sub(5,10)<<endl;
+    
+
+
+
+    return 0;
+}
+
+
+example calculation using values -->
+
+#include <iostream>
+using namespace std;
+
+    int add(int a , int b)
+{
+    return a+b;
+} 
+    int mul(int a , int b)
+{
+    return a*b;
+}
+    int sub(int a , int b )
+{
+    return a-b;
+}
+    float divi(int a, int b)
+    {
+        if(b==0){
+            cout<<"Division by zero = infinte"<<endl;
+            return 0;
+        }
+        return (float)a/b;
+    }
+int main()
+{
+    int a,b;
+    cout<<"Enter You Values: ";
+    cin>>a>>b;
+    cout<<"Addition : "<<add(a,b)<<endl;
+    cout<<"Multiplication : "<<mul(a,b)<<endl;
+    cout<<"Substraction : "<<sub(a,b)<<endl;
+    cout<<"Division : "<<divi(a,b)<<endl;
+    
+    return 0;
+}

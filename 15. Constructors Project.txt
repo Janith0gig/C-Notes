@@ -1,0 +1,53 @@
+Constructors Project
+
+
+
+#include <iostream>
+using namespace std;
+
+class Movie {
+public:
+    string title;
+    string direct;
+    double dura;
+    int rate;
+
+ void display()
+    {
+    
+        cout<<"Movie Name : "<<title<<endl;
+        cout<<"Director  : "<<direct<<endl;
+        cout<<"Duration : "<<dura<<endl;
+        cout<<"Rating : "<<rate<<endl;
+
+    }
+};
+int main(){
+  Movie mo1;
+    cout<<"Enter Movie Title : ";
+    cin>>mo1.title;
+    cout<<"Enter Director's Name : ";
+    cin>>mo1.direct;
+    cout<<"Enter Duration : ";
+    cin>>mo1.dura;
+    cout<<"Enter Rating : ";
+    cin>>mo1.rate;
+    cout<<endl;
+ Movie mo2;
+    cout<<"Enter Movie Title : ";
+    cin>>mo2.title;
+    cout<<"Enter Director's Name : ";
+    cin>>mo2.direct;
+    cout<<"Enter Duration : ";
+    cin>>mo2.dura;
+    cout<<"Enter Rating : ";
+    cin>>mo2.rate; 
+    cout<<endl;
+    
+    mo1.display();
+    cout<<endl;
+    mo2.display();
+    
+    
+    return 0;
+}

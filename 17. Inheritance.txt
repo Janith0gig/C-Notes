@@ -1,0 +1,43 @@
+Inheritance :-
+
+Inheritance is a fundamental concept in OOPs. It is the mechanism by which one class is allowed to inherit the features (fields and methods) of another class. Inheritance means creating new classes based on existing ones. A class that inherits from another class can reuse the methods and fields of that class.
+
+Types of Inheritance:-
+1. Single Inheritance
+2. Multiple Inheritance
+3. Multilevel Inheritance
+4. Hierarchical Inheritance
+5. Hybrid Inheritance
+
+Advantages of Inheritance in C++:-
+1.Code Reusability : Derived class can directly reuse data members and methods of its base class, avoiding code duplication.
+2.Abstraction : Supports abstract classes (classes with pure virtual functions) that define a common interface, enforcing abstraction.
+3.Class Hierarchy : You can build hierarchies (base → derived → further derived) to model real-world relationships.
+4.Polymorphism : Fully supports runtime polymorphism through virtual functions, and also compile-time polymorphism via function overloading and templates.
+
+
+Disadvantages of Inheritance in C++:-
+1.Tight Coupling : The child class becomes dependent on the parent class. Any change in the base class may force changes in derived classes.
+2.Reduced Flexibility : Sometimes inheritance is misused where composition (has-a relationship) would be better, leading to less flexible code.
+3.Increased Complexity : Deep inheritance hierarchies (multilevel or hybrid) can make the code hard to understand, maintain, and debug.
+4.Diamond Problem : With hybrid or multiple inheritance, ambiguity can occur if the same base class is inherited multiple times.
+
+
+#include <iostream>
+using namespace std;
+
+class Parent {
+public:
+void food(){
+    cout<<"Inherited,burger";}
+};
+class Child : public Parent//createing child class fromparent class
+{};
+
+int main()
+{
+Child b;
+b.food();
+ 
+    return 0;
+}

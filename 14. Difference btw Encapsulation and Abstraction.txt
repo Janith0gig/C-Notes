@@ -1,0 +1,27 @@
+Difference btw Encapsulation and Abstraction:-
+
+Encapsulation:- 
+
+Focus:- how data is hidden inside a class.
+Achieved by :- access modifiers.
+solves the problem in implementation level. 
+
+Abstraction:-
+
+Focus:- What functionalities are exposed.
+Achieved by :- Abstract classes, interfaces, or pure virtual functions.
+Solves the problem in design level
+
+
+What use of member function inside and outside the class? with real time example.
+Inside the class is denoted as incline function. and used to simple and to improves performance of the compiler.
+
+Outside the class are denoted by scope resolution (::). and is used for complex functions.
+
+eg:- bank account 
+inside :- showing balance
+outside:- depositing and withdrawing money 
+
+Car
+inside:- staring a car
+outside:- Driving a car 

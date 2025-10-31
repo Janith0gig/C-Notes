@@ -1,0 +1,136 @@
+#include <iostream>
+using namespace std;
+
+class Car {
+    public:
+    string brand;
+    string model;
+    int price;
+    int year;
+    
+    void display()
+    {
+        cout<<"Brand Name : "<<brand<<endl;    
+        cout<<"Model Name : "<<model<<endl;
+        cout<<"Price : "<<price<<endl;   
+        cout<<"Year Of Manufacturing : "<<year<<endl;    
+
+
+
+    }
+
+};
+
+int main() {
+   Car car1;   //crearting an object of the class Car
+   car1.brand = "McLaren";
+   car1.model = "P1";
+   car1.price = 6900000;
+   car1.year  = 2014;
+   
+   Car car2;
+   car2.brand = "Aston Martin";
+   car2.model = "Valkyire";
+   car2.price = 42000000;
+   car2.year  = 2021;   
+   
+    cout<<car1.brand<<endl; //dirct way of printing
+    cout<<car1.model<<endl;
+    
+    car1.display();//displaying the output using function
+    cout<<endl;
+    car2.display();
+
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+best ======>
+
+#include <iostream>
+using namespace std;
+
+class Car {
+    public:
+    string brand;
+    string model;
+    int price;
+    int year;
+    
+    void display()
+    {
+        cout<<"Brand Name : "<<brand<<endl;    
+        cout<<"Model Name : "<<model<<endl;
+        cout<<"Price : "<<price<<endl;   
+        cout<<"Year Of Manufacturing : "<<year<<endl;    
+
+    }
+
+};
+
+int main() {
+    Car car1;
+    cout<<"Enter The Brand Name : ";
+    cin>> car1.brand;
+  //  getline(cin,car1.brand);
+    cout<<"Enter The Model Name : ";
+    cin>> car1.model;
+  //  getline(cin,car1.model);
+    cout<<"Enter The Price : ";
+    cin>> car1.price;
+    cout<<"Enter The Year Of Manufacturing :  ";
+    cin>> car1.year;
+       cout<<endl;
+       cin.ignore();//buffer values will be ignored
+       
+    Car car2;
+    cout<<"Enter The Brand Name : ";
+    cin>> car2.brand; 
+   // getline(cin,car2.brand);
+    cout<<"Enter The Model Name : ";
+    cin>> car2.model;
+    //getline(cin,car2.model);
+    cout<<"Enter The Price : ";
+    cin>> car2.price;
+    cout<<"Enter The Year Of Manufacturing : ";
+    cin>> car2.year;
+    cout<<endl;
+
+ car1.display();
+ cout<<endl;
+  car2.display();
+    
+//   Car car1;   //crearting an object of the class Car
+//   car1.brand = "McLaren";
+//   car1.model = "P1";
+//   car1.price = 6900000;
+//   car1.year  = 2014;
+   
+//   Car car2;
+//   car2.brand = "Aston Martin";
+//   car2.model = "Valkyire";
+//   car2.price = 42000000;
+//   car2.year  = 2021;   
+   
+//     cout<<car1.brand<<endl; //dirct way of printing
+//     cout<<car1.model<<endl;
+    
+    // car1.display();//displaying the output using function
+    // cout<<endl;
+    // car2.display();
+
+
+    return 0;
+}

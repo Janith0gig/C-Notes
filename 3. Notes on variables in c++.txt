@@ -1,0 +1,94 @@
+Variables >> In C++ variables are used to store data and manipulate data through a program
+
+Data types in C++   --->
+  
+Data types help the complier allocate the appropriate amount of memory and determine how to interpret the data.
+
+int --> These are used to store integer values (whole numbers) i.e 1,2,4,5
+
+float --> Used to store decimal values (single precision) i.e 10.3 , 6.9
+
+double--> (double precision) i.e 10.7589, 4.201 
+
+char --> Used to store a single character i.e A , J 
+
+string --> is a sequence of characters i.e "hello" >> 'Hello', etc
+
+
+
+
+
+
+Example:->
+
+#include <iostream>
+using namespace std;
+int main()
+{ 
+    int a = 12;
+    float b = 6.9;
+    double c = 53.2350;
+    char d = 'j'; //single qoutes
+    string e = "alt"; //double qoutes
+    
+    cout<< "interger:-"<<a<<endl;
+    cout<< "float:-"<<b<<endl;
+    cout<< "double:-"<<c<<endl;
+    cout<< "char:-"<<d<<endl;
+    cout<< "string:-"<<e<<endl;
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+OPERATORS EXAMPLE -->
+
+
+
+#include <iostream>
+using namespace std;
+int main()
+{ 
+ int a = 10, b = 20;
+ 
+ cout<<"Addition :"<<a+b<<endl;
+ cout<<"Subraction :"<< a-b<<endl;
+ cout<<"Multiplcation :"<<a*b<<endl;
+ cout<<"Division :"<<a/b<<endl;
+ cout<<"Modulus :"<<a%b<<endl;
+ 
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+example 2 --> Relational operators
+
+#include <iostream>
+using namespace std;
+int main()
+{ 
+ int a = 10, b = 20;        //Relational operators
+ 
+ cout<<"Greater :"<<(a>b)<<endl;
+ cout<<"Lesser :"<< (a<b)<<endl;
+ cout<<"Greater or Equal :"<<(a>=b)<<endl;
+ cout<<"Lesser or Equal :"<<(a<=b)<<endl;
+ cout<<"Not Equals to :"<<(a!=b)<<endl;
+ 
+    return 0;
+}

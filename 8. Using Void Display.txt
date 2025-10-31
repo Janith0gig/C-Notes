@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+
+class Teacher {
+    public:
+    string name;
+    string subject;
+    int year;
+    
+    void display()
+    {
+        cout<<"Teacher Name : "<<name<<endl;    
+        cout<<"Subject's Name : "<<subject<<endl;
+        cout<<"Years Of Experience : "<<year<<endl;   
+          
+    }
+};
+int main(){
+    
+    Teacher tea1;
+    cout<<"Enter Teacher's Name : ";
+    cin>>tea1.name;
+     cout<<"Enter Teacher's Subject : ";
+    cin>>tea1.subject;
+     cout<<"Enter Teacher's Years Of Exprience : ";
+    cin>>tea1.year;
+    cout<<endl;
+    
+    Teacher tea2;
+    cout<<"Enter Teacher's Name : ";
+    cin>>tea2.name;
+     cout<<"Enter Teacher's Subject : ";
+    cin>>tea2.subject;
+     cout<<"Enter Teacher's Years Of Exprience : ";
+    cin>>tea2.year;
+    cout<<endl;
+    
+    tea1.display();
+    cout<<endl;
+    tea2.display();
+    
+    
+    
+    
+    
+    
+    return 0;
+}
+
+

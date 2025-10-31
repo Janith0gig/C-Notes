@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main()
+{ 
+    int a;
+   cout << "Enter Your Reg no:";
+   cin >>a;
+   cout << "Your Reg no is :"<<a;
+    return 0;
+}
+
+
+
+
+
+#include <iostream>
+using namespace std;
+int main()
+{ 
+    int a,b;
+   cout << "Enter Your Reg no:";
+   cin >>a;
+   cout << "Enter The Other Reg no:";
+   cin >>b;
+     cout << "Your Reg no is :"<<a<<endl;
+     cout << "Other Reg no is :"<<b;
+    return 0;
+}

@@ -1,0 +1,27 @@
+Classes in C++
+
+Accesses specifiers:
+1.Public
+2.Private
+3.Protected
+
+
+#include <iostream>
+using namespace std;
+
+class Car {
+    stirng brand;
+    string model;
+    int price;
+    int year;
+};
+
+int main() {
+   Car car1;   //crearting an object of the class Car
+   car1.brand = "McLaren";
+   car1.model = "P1";
+   car1.price = 6900000;
+   car1.year  = 2019;
+
+    return 0;
+}
